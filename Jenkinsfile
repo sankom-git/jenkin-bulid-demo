@@ -7,13 +7,13 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        /*stage('Build') {
+        stage('Build') {
             steps {
                  withMaven() {
                                    bat 'mvn -B -DskipTests clean package'
                                    }
             }
-        }*/
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
